@@ -53,18 +53,18 @@
                 <div class="sb-sidenav-menu-heading">快速查询</div>
                 <a class="nav-link" th:href="@{/member/toSelByCard}">
                     <div class="sb-nav-link-icon"><i class="fas fa-id-card"></i></div>
-                    会员卡查询
+                    学员卡查询
                 </a>
 
                 <!--管理区域-->
                 <div class="sb-sidenav-menu-heading">管理</div>
                 <a class="nav-link" th:href="@{/member/selMember}">
                     <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                    会员管理
+                    学员管理
                 </a>
                 <a class="nav-link" th:href="@{/employee/selEmployee}">
                     <div class="sb-nav-link-icon"><i class="fas fa-user-tie"></i></div>
-                    员工管理
+                    教师管理
                 </a>
                 <a class="nav-link" th:href="@{/equipment/selEquipment}">
                     <div class="sb-nav-link-icon"><i class="fas fa-table-tennis"></i></div>
@@ -74,13 +74,11 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-calendar-alt"></i></div>
                     课程管理
                 </a>
-
-                <!--链接区域-->
-                <div class="sb-sidenav-menu-heading">链接</div>
-                <a class="nav-link" href="https://github.com/MiloTnT/gym-management-system">
-                    <div class="sb-nav-link-icon"><i class="fab fa-github"></i></div>
-                    项目地址
+                <a class="nav-link" th:href="@{/message/select}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-calendar-alt"></i></div>
+                    活动通知管理
                 </a>
+
             </div>
         </div>
 

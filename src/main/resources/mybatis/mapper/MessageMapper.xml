@@ -10,7 +10,7 @@
     </select>
 
     <insert id="insert" parameterType="Message">
-        INSERT INTO message(messageId, messageInfo)
+        INSERT INTO message(message_id, message_info)
         VALUES (#{messageId}, #{messageInfo})
     </insert>
 

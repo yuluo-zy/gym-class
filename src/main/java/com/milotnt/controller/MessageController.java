@@ -2,6 +2,7 @@ package com.milotnt.controller;
 
 
 import com.milotnt.mapper.MessageMapper;
+import com.milotnt.pojo.ClassTable;
 import com.milotnt.pojo.Member;
 import com.milotnt.pojo.Message;
 import org.springframework.stereotype.Controller;
@@ -21,13 +22,22 @@ public class MessageController {
     @Resource
     MessageMapper messageMapper;
 
-    @PostMapping
-    public boolean addMessage(Message message) {
-        return messageMapper.insert(message);
+    @RequestMapping("/add")
+    public String addMessage(Message message) {
+         messageMapper.insert(message);
+         return "redirect:select";
     }
 
-    @GetMapping
-    public List<Message> get() {
-        return messageMapper.findAll();
+    //跳转新增课程页面
+    @RequestMapping("/toAdd")
+    public String toAdd() {
+        return "addMessage";
+    }
+
+    @RequestMapping("/select")
+    public String get(Model model) {
+        List<Message> all = messageMapper.findAll();
+        model.addAttribute("messageList", all);
+        return "selectMessage";
     }
 }

@@ -4,7 +4,7 @@ import javax.xml.crypto.Data;
 import java.util.Date;
 
 public class Reserve {
-    public Reserve(Integer id, Data start, Date end, Integer classId) {
+    public Reserve(Integer id, Date start, Date end, Integer classId) {
         this.id = id;
         this.start = start;
         this.end = end;
@@ -20,10 +20,10 @@ public class Reserve {
     }
 
     private  Integer id;
-    private Data start;
+    private Date start;
     private Date end;
 
-    public Reserve(Data start, Date end, Integer classId) {
+    public Reserve(Date start, Date end, Integer classId) {
         this.start = start;
         this.end = end;
         this.classId = classId;
@@ -31,11 +31,11 @@ public class Reserve {
 
     private Integer classId;
 
-    public Data getStart() {
+    public Date getStart() {
         return start;
     }
 
-    public void setStart(Data start) {
+    public void setStart(Date start) {
         this.start = start;
     }
 

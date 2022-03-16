@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Controller
-@RequestMapping("/message")
+@RequestMapping("/reserve")
 public class ReserveController {
 
     @Resource

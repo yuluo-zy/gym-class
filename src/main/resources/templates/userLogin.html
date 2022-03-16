@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content="gym-management-system"/>
     <meta name="author" content="ZhangMing"/>
-    <title>健身房管理系统-会员登录</title>
+    <title>健身房管理系统-学员登录</title>
     <link href="/static/css/styles.css" th:href="@{css/styles.css}" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
             crossorigin="anonymous"></script>
@@ -35,12 +35,12 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-5">
                         <div class="card shadow-lg border-0 rounded-lg mt-5">
-                            <div class="card-header"><h3 class="text-center font-weight-light my-4">会员登录</h3></div>
+                            <div class="card-header"><h3 class="text-center font-weight-light my-4">学员登录</h3></div>
                             <div class="card-body">
                                 <form th:action="@{/userLogin}" method="post" name="loginForm"
                                       onsubmit="return checkSubmit(this)">
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="inputAccount" name="memberAccount" type="account"
+                                        <input class="form-control" id="inputAccount" name="memberAccount" type="number"
                                                placeholder="Account"
                                                onkeypress="return event.keyCode>=48&&event.keyCode<=57"/>
                                         <label for="inputAccount">账号</label>
