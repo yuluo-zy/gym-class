@@ -40,4 +40,11 @@ public class MessageController {
         model.addAttribute("messageList", all);
         return "selectMessage";
     }
+
+    @RequestMapping("/toUser")
+    public String getUser(Model model) {
+        List<Message> all = messageMapper.findAll();
+        model.addAttribute("messageList", all);
+        return "selectUserMessage";
+    }
 }
