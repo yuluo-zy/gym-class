@@ -9,7 +9,7 @@
         FROM message
     </select>
 
-    <insert id="insertMessage" parameterType="Message">
+    <insert id="insert" parameterType="Message">
         INSERT INTO message(messageId, messageInfo)
         VALUES (#{messageId}, #{messageInfo})
     </insert>

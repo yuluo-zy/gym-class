@@ -14,5 +14,5 @@ public interface MessageMapper {
     List<Message> findAll();
 
     //新增优惠信息
-    Boolean insertMessage(Message info);
+    Boolean insert(Message info);
 }
